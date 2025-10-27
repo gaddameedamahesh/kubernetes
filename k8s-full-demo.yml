@@ -18,7 +18,7 @@ metadata:
   namespace: app-namespace
 type: Opaque
 data:
-  DB_PASSWORD: bXlwYXNzd29yZA==   # base64 for "mypassword"
+  DB_PASSWORD: bXlwYXNzd29yZA==   
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -106,7 +106,7 @@ metadata:
   name: flask-ingress
   namespace: app-namespace
 spec:
-  ingressClassName: nginx   # ✅ modern syntax
+  ingressClassName: nginx   
   rules:
     - host: flask.example.com
       http:
