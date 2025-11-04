@@ -14,3 +14,4 @@ export KOPS_STATE_STORE=s3://your-name-kops-state-store
 ssh-keygen
  kops create cluster --name mahesh.k8s.local --zones us-east-1a --master-size t2.medium --node-size t2.micro
  kops update cluster --name mahesh.k8s.local --yes --admin
+helm install:   curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
